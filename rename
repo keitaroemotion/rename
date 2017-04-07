@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+target_file = ARGV[0]
+new_name    = ARGV[1]
+
+command = "mv #{target_file} #{File.dirname(target_file)}/#{new_name}"
+puts "#{command}"
+system command
